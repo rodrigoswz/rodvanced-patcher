@@ -48,11 +48,19 @@ apkmirror-dlurl = "https://www.apkmirror.com/apk/spotify-ab/spotify-music-podcas
 uptodown-dlurl = "https://spotify.en.uptodown.com/android"
 included-patches = "'Change version code'"
 
+[Lightroom]
+enabled = true
+version = "auto"
+arch = "arm64-v8a"
+apkmirror-dlurl = "https://www.apkmirror.com/apk/adobe/lightroom"
+uptodown-dlurl = "https://adobe-lightroom-mobile.en.uptodown.com/android"
+included-patches = "'Change version code'"
+
 [Duolingo]
 enabled = true
 patches-source = "hoo-dles/revanced-custom-patches"
 version = "auto"
-apkmirror-dlurl = "https://www.apkmirror.com/apk/duolingo/"
+apkmirror-dlurl = "https://www.apkmirror.com/apk/duolingo"
 uptodown-dlurl = "https://duolingo.en.uptodown.com/android"
 
 [Prime-Video]
