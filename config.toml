@@ -63,11 +63,12 @@ version = "auto"
 apkmirror-dlurl = "https://www.apkmirror.com/apk/duolingo"
 uptodown-dlurl = "https://duolingo.en.uptodown.com/android"
 
-[Prime-Video]
+[Instagram]
 enabled = true
-app-name = "PrimeVideo"
+app-name = "Instagram"
 version = "auto"
 arch = "arm64-v8a"
-apkmirror-dlurl = "https://www.apkmirror.com/apk/amazon-mobile-llc/amazon-prime-video"
-uptodown-dlurl = "https://amazon-video.en.uptodown.com/android"
-included-patches = "'Change version code' 'Rename shared permissions'"
+apkmirror-dlurl = "https://www.apkmirror.com/apk/instagram/instagram-instagram"
+uptodown-dlurl = "https://instagram.en.uptodown.com/android"
+included-patches = "'Change version code' 'Limit feed to followed profiles' 'Hide navigation buttons' 'Hide explore feed'"
+
