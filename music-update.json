@@ -1,6 +1,6 @@
 {
   "version": "v8.10.52 (patches 5.44.0)",
-  "versionCode": 25,
-  "zipUrl": "https://github.com/rodrigoswz/rodvanced-patcher/releases/download/25/music-revanced-magisk-v8.10.52-arm64-v8a.zip",
+  "versionCode": 26,
+  "zipUrl": "https://github.com/rodrigoswz/rodvanced-patcher/releases/download/26/music-revanced-magisk-v8.10.52-arm64-v8a.zip",
   "changelog": "https://raw.githubusercontent.com/rodrigoswz/rodvanced-patcher/update/build.md"
 }
