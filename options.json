@@ -5,6 +5,10 @@
       {
         "key": "shorts",
         "value": true
+      },
+      {
+        "key": "subscriptions",
+        "value": true
       }
     ]
   },
@@ -14,19 +18,6 @@
       {
         "key": "iconType",
         "value": "outline"
-      }
-    ]
-  },
-  {
-    "patchName": "Hide Shorts components",
-    "options": [
-      {
-        "key": "hideShortsAppShortcut",
-        "value": true
-      }
-      {
-        "key": "hideShortsWidget",
-        "value": true
       }
     ]
   },
