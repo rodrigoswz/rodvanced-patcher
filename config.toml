@@ -58,7 +58,7 @@ patcher-args = "--legacy-options options.json"
 apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube-music"
 
 [YouTube-Morphe]
-enabled = false
+enabled = true
 app-name = "YouTube"
 patches-source = "MorpheApp/morphe-patches"
 cli-source = "MorpheApp/morphe-cli"
@@ -71,7 +71,7 @@ patcher-args = "--legacy-options options.json"
 apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube"
 
 [Music-Morphe]
-enabled = false
+enabled = true
 app-name = "Music"
 patches-source = "MorpheApp/morphe-patches"
 cli-source = "MorpheApp/morphe-cli"
@@ -111,7 +111,7 @@ uptodown-dlurl = "https://amazon-video.uptodown.com/android"
 included-patches = "'Rename shared permissions' 'Change version code'"
 
 [Strava]
-enabled = true
+enabled = false
 app-name = "Strava"
 version = "auto"
 arch = "arm64-v8a"
