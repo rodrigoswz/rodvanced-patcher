@@ -32,7 +32,7 @@ apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube-music"
 uptodown-dlurl = "https://youtube-music.en.uptodown.com/android"
 
 [YouTube-Extended]
-enabled = false
+enabled = true
 app-name = "YouTube"
 patches-source = "anddea/revanced-patches"
 cli-source = "inotia00/revanced-cli"
@@ -45,7 +45,7 @@ patcher-args = "--legacy-options options.json"
 apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube"
 
 [Music-Extended]
-enabled = false
+enabled = true
 app-name = "Music"
 patches-source = "anddea/revanced-patches"
 cli-source = "inotia00/revanced-cli"
@@ -84,7 +84,7 @@ patcher-args = "-e 'Hide Shorts components' -OhideShortsAppShortcut=true -OhideS
 apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube-music"
 
 [GooglePhotos]
-enabled = false
+enabled = true
 build-mode = "both"
 version = "auto"
 arch = "arm64-v8a"
