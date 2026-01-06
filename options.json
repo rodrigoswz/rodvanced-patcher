@@ -29,18 +29,5 @@
         "value": "thin"
       }
     ]
-  },
-  {
-    "patchName": "Hide Shorts components",
-    "options": [
-      {
-        "key": "hideShortsAppShortcut",
-        "value": true
-      },
-      {
-        "key": "hideShortsWidget",
-        "value": true
-      }
-    ]
   }
 ]
