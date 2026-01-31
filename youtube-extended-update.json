@@ -1,6 +1,6 @@
 {
-  "version": "v20.05.46 (patches 3.15.0.rvp)",
-  "versionCode": 43,
-  "zipUrl": "https://github.com/rodrigoswz/rodvanced-patcher/releases/download/43/youtube-revanced-extended-magisk-v20.05.46-arm64-v8a.zip",
+  "version": "v20.05.46 (patches 3.16.0.rvp)",
+  "versionCode": 52,
+  "zipUrl": "https://github.com/rodrigoswz/rodvanced-patcher/releases/download/52/youtube-revanced-extended-magisk-v20.05.46-arm64-v8a.zip",
   "changelog": "https://raw.githubusercontent.com/rodrigoswz/rodvanced-patcher/update/build.md"
 }
