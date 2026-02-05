@@ -31,7 +31,7 @@ arch = "arm64-v8a"
 apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube-music"
 uptodown-dlurl = "https://youtube-music.en.uptodown.com/android"
 
-[YouTube-Extended]
+[YouTube-Anddea]
 enabled = true
 app-name = "YouTube"
 patches-source = "anddea/revanced-patches"
@@ -44,7 +44,7 @@ arch = "arm64-v8a"
 patcher-args = "--legacy-options options.json"
 apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube"
 
-[Music-Extended]
+[Music-Anddea]
 enabled = false
 app-name = "Music"
 patches-source = "anddea/revanced-patches"
