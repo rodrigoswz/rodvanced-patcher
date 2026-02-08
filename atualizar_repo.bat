@@ -1,5 +1,5 @@
 @echo off
-echo --- ATUALIZANDO SEU REPO ---
+echo --- ATUALIZANDO SEU REPO (Notebook Pessoal) ---
 
 :: 1. Garante que voce esta na branch principal
 git checkout main
@@ -12,31 +12,29 @@ echo.
 echo Baixando atualizacoes do E85Addict...
 git fetch upstream
 
-:: 4. Mescla (Tenta automatico, se der erro de historia, forca)
+:: 4. Mescla
 echo.
 echo Mesclando mudancas...
 git merge upstream/main
 if %errorlevel% neq 0 (
     echo.
-    echo [!] TENTANDO MESCLAGEM FORCADA (Primeira vez?)...
+    echo [!] TENTANDO MESCLAGEM FORCADA...
     git merge upstream/main --allow-unrelated-histories
 )
 
-:: 5. Verifica se deu conflito
+:: 5. Verifica conflito
 if %errorlevel% neq 0 (
     echo.
-    echo ❌ CONFLITO DETECTADO!
-    echo O script parou para voce resolver os arquivos conflitantes manualmente.
-    echo Corrija, use 'git add .' e 'git commit'.
+    echo ❌ CONFLITO DETECTADO! Resolva manualmente.
     pause
     exit /b
 )
 
-:: 6. Envia para o seu GitHub
+:: 6. Envia para o GitHub
 echo.
 echo Enviando para o seu GitHub...
 git push
 
 echo.
-echo ✅ TUDO PRONTO! SEU REPO ESTA ATUALIZADO.
+echo ✅ TUDO PRONTO!
 pause
