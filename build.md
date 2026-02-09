@@ -1,5 +1,7 @@
-GooglePhotos: 7.61.0.860908034
-downloaded from: [Archive - GooglePhotos](https://archive.org/download/jhc-apks/apks/com.google.android.apps.photos)  
+GooglePhotos: 7.62.0.865608293
+downloaded from: [Uptodown - GooglePhotos](https://google-photos.en.uptodown.com/android/download/1145798910)  
+Instagram: 415.0.0.36.76
+downloaded from: [Uptodown - Instagram](https://instagram.en.uptodown.com/android/download/1145234588)  
 YouTube-Morphe: 20.40.45
 downloaded from: [Uptodown - YouTube-Morphe](https://youtube.en.uptodown.com/android/download/1113555850)  
 
@@ -18,4 +20,6 @@ Patches: MorpheApp/patches-1.12.0.mpp 
 
 CLI: E85Addict/revanced-cli-5.0.1-all.jar  
 Patches: ReVanced/patches-5.48.0.rvp  
-[Changelog](https://github.com/ReVanced/revanced-patches/releases/tag/v5.48.0)  
+[Changelog](https://github.com/ReVanced/revanced-patches/releases/tag/v5.48.0)
+
+CLI: revanced/revanced-cli-5.0.1-all.jar    
