@@ -1,7 +1,7 @@
 GooglePhotos: 7.62.0.865608293
 downloaded from: [Uptodown - GooglePhotos](https://google-photos.en.uptodown.com/android/download/1145798910)  
-Instagram: 415.0.0.36.76
-downloaded from: [Uptodown - Instagram](https://instagram.en.uptodown.com/android/download/1145234588)  
+Instagram: 401.0.0.48.79
+downloaded from: [Uptodown - Instagram](https://instagram.en.uptodown.com/android/download/1144829877)  
 YouTube-Morphe: 20.40.45
 downloaded from: [Uptodown - YouTube-Morphe](https://youtube.en.uptodown.com/android/download/1113555850)  
 
