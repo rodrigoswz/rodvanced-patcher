@@ -1,5 +1,7 @@
 GooglePhotos: 7.61.0.860908034
 downloaded from: [Archive - GooglePhotos](https://archive.org/download/jhc-apks/apks/com.google.android.apps.photos)  
+YouTube-Morphe: 20.40.45
+downloaded from: [Uptodown - YouTube-Morphe](https://youtube.en.uptodown.com/android/download/1113555850)  
 
 Install [Microg](https://github.com/ReVanced/GmsCore/releases) for non-root YouTube and YT Music APKs  
 Use [zygisk-detach](https://github.com/j-hc/zygisk-detach) to detach root ReVanced YouTube and YT Music from Play Store  
