@@ -1,12 +1,6 @@
-enable-magisk-update = true   # set this to false if you do not want to receive updates for the module in magisk app
-logging-to-file = true        # enables logging of every patch process to a seperate file
+enable-magisk-update = true
+logging-to-file = true
 parallel-jobs = 1
-
-# add 'enabled = false' for not patching a specific app or remove it from the config
-# see https://github.com/E85Addict/revanced-magisk-module/blob/main/CONFIG.md for more detailed explanations
-# see https://github.com/E85Addict/revanced-magisk-module/blob/main/CONFIG.md for more detailed explanations
-
-# you can use rvmm-config-gen to generate a config
 
 [YouTube]
 enabled = false
@@ -14,10 +8,11 @@ build-mode = "both"
 module-prop-name = "youtube-rod"
 patches-source = "revanced/revanced-patches"
 cli-source = "revanced/revanced-cli"
-patcher-args = "-e 'Hide Shorts components' -OhideShortsAppShortcut=true -OhideShortsWidget=true "
+patcher-args = "-e 'Hide Shorts components' -OhideShortsAppShortcut=true -OhideShortsWidget=true"
 excluded-patches = "'Enable debugging' 'Custom branding'"
 version = "auto"
 arch = "arm64-v8a"
+dpi = "nodpi"
 apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube"
 uptodown-dlurl = "https://youtube.en.uptodown.com/android"
 
@@ -29,6 +24,7 @@ patches-source = "revanced/revanced-patches"
 cli-source = "revanced/revanced-cli"
 version = "auto"
 arch = "arm64-v8a"
+dpi = "nodpi"
 apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube-music"
 uptodown-dlurl = "https://youtube-music.en.uptodown.com/android"
 
@@ -41,10 +37,13 @@ rv-brand = "ReVanced Extended"
 build-mode = "both"
 module-prop-name = "youtube-rod"
 included-patches = "'Theme' 'Hide shortcuts'"
-arch = "arm64-v8a"
 patcher-args = "--legacy-options options.json"
 apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube"
 uptodown-dlurl = "https://youtube.en.uptodown.com/android"
+arch = "arm64-v8a"
+dpi = "nodpi"
+include-stock = false
+riplib = true
 
 [Music-Anddea]
 enabled = false
@@ -55,10 +54,13 @@ rv-brand = "ReVanced Extended"
 build-mode = "both"
 module-prop-name = "music-rod"
 included-patches = "'Dark theme'"
-arch = "arm64-v8a"
 patcher-args = "--legacy-options options.json"
 apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube-music"
 uptodown-dlurl = "https://youtube-music.en.uptodown.com/android"
+arch = "arm64-v8a"
+dpi = "nodpi"
+include-stock = false
+riplib = true
 
 [YouTube-Morphe]
 enabled = true
@@ -69,10 +71,13 @@ rv-brand = "Morphe"
 excluded-patches = "'Custom branding'"
 build-mode = "both"
 module-prop-name = "youtube-rod"
-arch = "arm64-v8a"
-patcher-args = "-e 'Hide Shorts components' -OhideShortsAppShortcut=true -OhideShortsWidget=true "
+patcher-args = "-e 'Hide Shorts components' -OhideShortsAppShortcut=true -OhideShortsWidget=true"
 apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube"
 uptodown-dlurl = "https://youtube.en.uptodown.com/android"
+arch = "arm64-v8a"
+dpi = "nodpi"
+include-stock = false
+riplib = true
 
 [Music-Morphe]
 enabled = false
@@ -83,16 +88,20 @@ rv-brand = "Morphe"
 excluded-patches = "'Custom branding'"
 build-mode = "both"
 module-prop-name = "music-rod"
-arch = "arm64-v8a"
-patcher-args = "-e 'Hide Shorts components' -OhideShortsAppShortcut=true -OhideShortsWidget=true "
+patcher-args = "-e 'Hide Shorts components' -OhideShortsAppShortcut=true -OhideShortsWidget=true"
 apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube-music"
 uptodown-dlurl = "https://youtube-music.en.uptodown.com/android"
+arch = "arm64-v8a"
+dpi = "nodpi"
+include-stock = false
+riplib = true
 
 [GooglePhotos]
 enabled = true
 build-mode = "both"
 version = "auto"
 arch = "arm64-v8a"
+dpi = "nodpi"
 apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/photos/"
 uptodown-dlurl = "https://google-photos.en.uptodown.com/android"
 archive-dlurl = "https://archive.org/download/jhc-apks/apks/com.google.android.apps.photos"
@@ -106,6 +115,8 @@ included-patches = "'Custom theme'"
 archive-dlurl = "https://archive.org/download/e85-apks/apks/com.spotify.music"
 apkmirror-dlurl = "https://www.apkmirror.com/apk/spotify-ab/spotify-music-podcasts"
 uptodown-dlurl = "https://spotify.en.uptodown.com/android"
+arch = "arm64-v8a"
+dpi = "nodpi"
 
 [Prime-Video]
 enabled = false
@@ -114,20 +125,24 @@ version = "auto"
 apkmirror-dlurl = "https://www.apkmirror.com/apk/amazon-mobile-llc/amazon-prime-video"
 uptodown-dlurl = "https://amazon-video.uptodown.com/android"
 included-patches = "'Rename shared permissions' 'Change version code'"
+arch = "arm64-v8a"
+dpi = "nodpi"
 
 [Strava]
 enabled = false
 app-name = "Strava"
 version = "auto"
-arch = "arm64-v8a"
 uptodown-dlurl = "https://strava.uptodown.com/android"
 included-patches = "'Change version code'"
+arch = "arm64-v8a"
+dpi = "nodpi"
 
 [Disney-Plus]
 enabled = false
 app-name = "DisneyPlus"
 version = "auto"
-arch = "arm64-v8a"
 apkmirror-dlurl = "https://www.apkmirror.com/apk/disney/disney"
 uptodown-dlurl = "https://disney-disneyplus.uptodown.com/android"
 included-patches = "'Change version code'"
+arch = "arm64-v8a"
+dpi = "nodpi"
