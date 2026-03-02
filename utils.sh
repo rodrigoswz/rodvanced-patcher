@@ -119,7 +119,7 @@ get_prebuilts() {
 			if [ $grab_cl = true ]; then echo -e "[Changelog](https://github.com/${src}/releases/tag/${tag_name})\n" >>"${cl_dir}/changelog.md"; fi
 			if [ "$REMOVE_RV_INTEGRATIONS_CHECKS" = true ]; then
 				local extensions_ext
-				extensions_ext=$(unzip -l "${file}" "extensions/shared*" | grep -o "shared.*") extensions_ext="${extensions_ext#*.}"
+				extensions_ext=$(unzip -l "${file}" "extensions/shared.*" | grep -o "shared\..*") extensions_ext="${extensions_ext#*.}"
 				if ! (
 					mkdir -p "${file}-zip" || return 1
 					unzip -qo "${file}" -d "${file}-zip" || return 1
@@ -475,6 +475,16 @@ get_archive_resp() {
 get_archive_vers() { sed 's/^[^-]*-//;s/-\(all\|arm64-v8a\|arm-v7a\)\.apk//g' <<<"$__ARCHIVE_RESP__"; }
 get_archive_pkg_name() { echo "$__ARCHIVE_PKG_NAME__"; }
 
+# -------------------- direct --------------------
+dl_direct() {
+	local url=$1 version=${2// /-} output=$3 arch=$4 dpi=$5
+	req "$url" "${output}" || return 1
+	dl_url=$url
+}
+get_direct_vers() { cut -d- -f2 <<<"$__DIRECT_APKNAME__"; }
+get_direct_pkg_name() { cut -d- -f1 <<<"$__DIRECT_APKNAME__"; }
+get_direct_resp() { __DIRECT_APKNAME__=$(awk -F/ '{print $NF}' <<<"$1"); }
+
 # -------------------- github release --------------------
 get_github_release_resp() {
 	local url="$1"
@@ -514,7 +524,7 @@ get_github_release_vers() {
 dl_github_release() {
 	local url=$1 version=$2 output=$3 arch=$4 dpi=$5
 	local download_url ver_clean arch_clean
-	dl_url=$url
+
 	ver_clean=${version// /}
 	ver_clean=${ver_clean#v}
 
@@ -583,7 +593,7 @@ build_rv() {
 	[ "${args[exclusive_patches]}" = true ] && p_patcher_args+=("--exclusive")
 
 	local tried_dl=()
-	for dl_p in github_release archive apkmirror uptodown; do
+	for dl_p in direct github_release archive apkmirror uptodown; do
 		if [ -z "${args[${dl_p}_dlurl]}" ]; then continue; fi
 		if ! get_${dl_p}_resp "${args[${dl_p}_dlurl]}" || ! pkg_name=$(get_"${dl_p}"_pkg_name); then
 			args[${dl_p}_dlurl]=""
@@ -637,7 +647,7 @@ build_rv() {
 	version_f=${version_f#v}
 	local stock_apk="${TEMP_DIR}/${pkg_name}-${version_f}-${arch_f}.apk"
 	if [ ! -f "$stock_apk" ]; then
-		for dl_p in github_release archive apkmirror uptodown; do
+		for dl_p in direct github_release archive apkmirror uptodown; do
 			if [ -z "${args[${dl_p}_dlurl]}" ]; then continue; fi
 			pr "Downloading '${table}' from '${dl_p}'"
 			if ! isoneof $dl_p "${tried_dl[@]}"; then
@@ -665,8 +675,8 @@ build_rv() {
         dl_from="Uptodown"
 	elif [ "$dl_from" = archive ]; then
 		dl_from="Archive"
-	elif [ "$dl_from" = github_release ]; then
-		dl_from="GitHub Release"
+	elif [ "$dl_from" = direct ]; then
+		dl_from="Direct URL"
     fi
 
 	log "${table}: ${version}\ndownloaded from: [$dl_from - ${table}]($dl_url)"
