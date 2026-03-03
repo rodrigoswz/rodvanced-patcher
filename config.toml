@@ -77,7 +77,7 @@ uptodown-dlurl = "https://youtube-music.en.uptodown.com/android"
 # archive-dlurl = "https://archive.org/download/jhc-apks/apks/com.google.android.apps.youtube.music"
 
 [Instagram]
-enabled = true
+enabled = false
 app-name = "Instagram"
 patches-source = "revanced/revanced-patches"
 cli-source = "revanced/revanced-cli"
