@@ -1,6 +1,10 @@
 enable-magisk-update = true
 logging-to-file = true
+compression-level = 9
 parallel-jobs = 1
+
+patches-version = "dev"
+cli-version = "latest"
 
 [YouTube-Morphe]
 enabled = true
