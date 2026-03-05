@@ -1,5 +1,5 @@
 YouTube-Morphe: 20.44.38
-downloaded from: [Direct URL - YouTube-Morphe](https://github.com/E85Addict/APKs/releases/download/1/com.google.android.youtube-20.40.45-all.apk)  
+downloaded from: [Archive - YouTube-Morphe](https://youtube.en.uptodown.com/android/download/1123926463)  
 
 Install [Microg](https://github.com/ReVanced/GmsCore/releases) for non-root YouTube and YT Music APKs  
 Use [zygisk-detach](https://github.com/j-hc/zygisk-detach) to detach YouTube and YT Music modules from Play Store  
