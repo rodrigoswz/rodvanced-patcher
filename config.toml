@@ -23,7 +23,7 @@ include-stock = true
 riplib = true
 apkmirror-dlurl = "https://apkmirror.com/apk/google-inc/youtube"
 uptodown-dlurl = "https://youtube.en.uptodown.com/android"
-#archive-dlurl = "https://archive.org/download/e85-apks/apks/com.google.android.youtube"
+archive-dlurl = "https://archive.org/download/jhc-apks/apks/com.google.android.youtube"
 #direct-dlurl = "https://github.com/E85Addict/APKs/releases/download/1/com.google.android.youtube-20.40.45-all.apk"
 #github-release-dlurl = "https://github.com/E85Addict/APKs/releases/latest"
 
@@ -43,7 +43,7 @@ include-stock = true
 riplib = true
 apkmirror-dlurl = "https://apkmirror.com/apk/google-inc/youtube-music"
 uptodown-dlurl = "https://youtube-music.en.uptodown.com/android"
-#archive-dlurl = "https://archive.org/download/e85-apks/apks/com.google.android.apps.youtube.music"
+archive-dlurl = "https://archive.org/download/jhc-apks/apks/com.google.android.apps.youtube.music"
 #direct-dlurl = "https://github.com/E85Addict/APKs/releases/download/1/com.google.android.apps.youtube.music-8.40.54-arm64-v8a.apk"
 #github-release-dlurl = "https://github.com/E85Addict/APKs/releases/latest"
 
@@ -65,7 +65,7 @@ riplib = true
 apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube"
 uptodown-dlurl = "https://youtube.en.uptodown.com/android"
 #github-release-dlurl = "https://github.com/E85Addict/APKs/releases/latest"
-#archive-dlurl = "https://archive.org/download/e85-apks/apks/com.google.android.youtube"
+archive-dlurl = "https://archive.org/download/e85-apks/apks/com.google.android.youtube"
 
 [Music-Anddea]
 enabled = false
@@ -84,7 +84,7 @@ riplib = true
 apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube-music"
 uptodown-dlurl = "https://youtube-music.en.uptodown.com/android"
 #github-release-dlurl = "https://github.com/E85Addict/APKs/releases/latest"
-#archive-dlurl = "https://archive.org/download/e85-apks/apks/com.google.android.apps.youtube.music"
+archive-dlurl = "https://archive.org/download/e85-apks/apks/com.google.android.apps.youtube.music"
 
 [Instagram]
 enabled = false
@@ -102,7 +102,7 @@ include-stock = false
 riplib = true
 apkmirror-dlurl = "https://www.apkmirror.com/apk/instagram/instagram-instagram"
 uptodown-dlurl = "https://instagram.en.uptodown.com/android"
-# archive-dlurl = "https://archive.org/download/jhc-apks/apks/com.instagram.android"
+archive-dlurl = "https://archive.org/download/jhc-apks/apks/com.instagram.android"
 
 [GooglePhotos]
 enabled = false
